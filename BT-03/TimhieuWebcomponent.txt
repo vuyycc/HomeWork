@@ -1,0 +1,17 @@
+- Custom elements
+Như tên ngụ ý, custom elements là các thành phần HTML, như <div> , <section> hoặc <article> , nhưng một cái gì đó chúng ta có thể tự đặt tên cho chúng, được xác định thông qua API trình duyệt. Custom elements giống như các phần tử HTML tiêu chuẩn đó - tên trong ngoặc <> - ngoại trừ chúng luôn có dấu gạch ngang, như <news-slider> hoặc <bacon-cheeseburger>
+- Shadow DOM
+Shadow DOM là một phiên bản đóng gói của DOM. Điều này cho phép các tác giả cách ly hiệu quả các đoạn DOM với nhau, bao gồm mọi thứ có thể được sử dụng làm bộ chọn CSS và các kiểu được liên kết với chúng. Nói chung, bất kỳ nội dung nào trong phạm vi của tài liệu đều được gọi là light DOM và bất kỳ nội dung nào trong shadow root đều được gọi là shadow DOM.
+Khi sử dụng light DOM, một phần tử có thể được chọn bằng cách sử dụng document.querySelector('selector') hoặc bằng cách nhắm vào phần tử con nào của phần tử bất kì bằng cách sử dụng element.querySelector('selector') theo cách tương tự, có thể nhắm mục tiêu đến các phần tử con của shadow root bằng cách gọi shadowRoot.querySelector trong đó shadowRoot là tham chiếu đến document fragment - sự khác biệt là các phần tử con của shadow root sẽ không thể chọn từ light DOM
+- HTML templates
+Phần tử <template> được đặt tên khéo léo cho phép chúng tôi dập tắt các mẫu mã có thể sử dụng lại bên trong một luồng HTML thông thường sẽ không được hiển thị ngay lập tức, nhưng có thể được sử dụng sau đó.
+2.Vòng đời của một Component
+- constructor
+- getDerivedStateFromProps
+- shouldComponentUpdate
+- render
+- getSnapshotBeforeUpdate
+- componentDidUpdate
+- componentDidMount
+- componentWillUnmount
+
