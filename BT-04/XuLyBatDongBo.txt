@@ -1,0 +1,19 @@
+-) Async - khai báo một hàm bất đồng bộ (async function someName(){...}).
+
++ Tự động biến đổi một hàm thông thường thành một Promise.
++ Khi gọi tới hàm async nó sẽ xử lý mọi thứ và được trả về kết quả trong hàm của nó.
++ Async cho phép sử dụng Await.
+
+-) Await - tạm dừng việc thực hiện các hàm async.
+
++ Khi được đặt trước một Promise, nó sẽ đợi cho đến khi Promise kết thúc và trả về kết quả.
++ Await chỉ làm việc với Promises, nó không hoạt động với callbacks.
++ Await chỉ có thể được sử dụng bên trong các function async.
+
+VD: Sử dụng await để thực hiện làm đợi fetch() kết thúc và trẻ về response chứ không thực hiện câu lệnh ở dưới trước
+
+async function renderFood(){
+    const response = await fetch(`https://5f389e0141c94900169bfe8b.mockapi.io/api/v1/Foods`);
+    const data = await response.json();
+	console.log(data[0].name);
+}
