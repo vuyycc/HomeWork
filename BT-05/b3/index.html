@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form-login></form-login>
+</body>
+
+    <template id="template-input-wrapper">
+        <link rel="stylesheet" href="css.css">
+        <div class="input-wrapper">
+            <label for="" id="label-input"></label>
+            <input type="text" id="input-main">
+            <div id="input-error"></div>
+        </div>
+    </template>
+
+    <template id="template-form-login">
+        <link rel="stylesheet" href="css.css">
+        <form action="" class="form-login-f">
+            <input-wrapper id="email" label="Email" type="text" value="" error=""></input-wrapper>
+            <input-wrapper id="password" label="Password" type="password" value="" error=""></input-wrapper>
+        <button>Login</button>
+        </form>
+    </template>
+
+<script src="./app.js" type="module"></script>
+</html>

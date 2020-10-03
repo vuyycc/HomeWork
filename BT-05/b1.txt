@@ -1,0 +1,18 @@
+Khác nhau giữa Function và Arrow Function
+- Khác nhau ở cú phảp
++ Arrow Function sử dụng kí tự "=>" và ta có thể bỏ qua từ khóa return
++ Arrow Function có thể sử dụng trong trường hợp : map, filter, forEach sẽ làm code tối giản hơn
+- Sử dụng this
++ Function : Giá trị của this sẽ phụ thuộc vào ngữ cảnh
++ Arrow Function : Luôn bằng với giá trị của function ở ngoài, không khai báo thêm vùng extecution context mà chung dung với thằng cha.
+
+VD:
+
+const Ext = { 
+ getValue(text) {
+console.log(this);   // Với function thông thường là Object chính chủ.
+const arrowF = () => {
+	cosole.log(this);  //với arrow  function là giá trị của funtion getValue ở ngoài.
+	}
+}
+
