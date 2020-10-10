@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0
+}
+
+#navBar {
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-navBar {
+    width: auto;
+    height: auto;
+}
+
+.text {
+    color: #ffff;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+    margin: 0 10px 0 10px;
+}
+
+.text:hover {
+    color: red;
+    border-bottom: 1px solid red;
+}
+
+#main-blog {
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    margin-top: 50px;
+}
+
+.ban {
+    width: 15%;
+    height: 100%;
+}
+
+#main-center {
+    display: flex;
+    width: 70%;
+    height: 100%;
+}
+
